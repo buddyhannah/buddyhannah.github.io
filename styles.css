@@ -1,0 +1,517 @@
+
+
+body, ul, button {
+
+    margin: 0;
+    padding: 0;
+
+    /* Default font*/
+    color: #222;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 1.4em;
+    font-style: normal;
+}
+
+body{
+    background-color: #d3ddf2; 
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-family: "Concert One", serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    text-align: center;
+    color: #222;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: "Concert One", serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    text-align: center;
+    color: #222;
+    margin-top: 20px;
+}
+
+
+
+/* DARK MODE */
+body.dark {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark nav {
+    background-color: #121212;
+}
+
+body.dark h1, 
+body.dark h2, 
+body.dark .slide-title {
+    color: #fff;
+}
+
+body.dark .nav-list li a {
+    color: #ddd;
+}
+
+body.dark .nav-list li a:hover {
+    background-color: #333;
+}
+
+body.dark .slide {
+    background-color: #2b2b2b;
+}
+
+body.dark .slide-description {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark button {
+    background: #444;
+    color: white;
+}
+
+body.dark button:hover {
+    background: #666;
+}
+
+
+body.dark form {
+    background: #2b2b2b; 
+    color: #fff;
+}
+
+body.dark input, body.dark textarea {
+    background-color: #444; 
+    color: #fff; 
+    border: 1px solid #666; 
+}
+
+body.dark button {
+    background: #444;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+body.dark button:hover {
+    background: #666;
+}
+
+
+label {
+    font-weight: bold;
+    text-align: left;
+    color: #222; 
+}
+
+
+body.dark label {
+    color: #fff; 
+}
+
+
+section {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+
+
+/* Images */
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    object-fit: contain; 
+}
+
+.img_container {
+    width: 50%;
+    margin: 0 auto; 
+    padding: 10px; 
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.img_container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* NAVIGATION MENU */
+nav {
+    background-color: #2C3E50;;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.nav-list li a:hover {
+    background-color: #172029;
+    border-radius: 5px;
+}
+
+
+#theme-toggle {
+    background-color: #9cbbff; 
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 20px;  
+}
+
+  
+#theme-toggle:hover {
+    background-color:  #88a1d5;
+}
+
+
+body.dark #theme-toggle {
+    background-color: #555;
+    color: #ddd;
+}
+
+body.dark #theme-toggle:hover {
+    background-color:#777;
+}
+
+/* HOBBY IMAGE GRID*/
+
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 1 1 20%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%; 
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+
+/* PROJECTS SLIDESHOW */
+.slideshow-container {
+    position: relative;
+    width:80%;
+    height: 450px; 
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+/* Each slide */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none; 
+    text-align: center;
+    background-color:  #e9ecf1;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+  
+/* Active slide */
+.slide.active {
+    display: block;
+}
+  
+/* Slide title */
+.slide-title {
+    font-family: "Concert One", serif;
+    font-size: 1.6rem;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+  
+/* Slide description */
+.slide-description {
+    font-size: 1rem;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+  
+/* Slide content */
+.slide-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px); 
+    overflow: hidden;
+}
+  
+.slide-content img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+    border-radius: 5px;
+}
+
+.slide-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+  
+
+.fade-container {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.fade-img {
+    position: absolute;
+    object-fit: contain; /* Ensure the entire image is visible */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+/* First image is visible by default */
+.fade-img:first-child {
+    opacity: 1;
+}
+
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Fade animation */
+.fade {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+  
+
+
+
+/* CONTACT FORM */
+input, textarea {
+    width: 100%;
+    padding: 10px 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; 
+}
+
+
+
+#Contact {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background:  #e9ecf1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background: #222;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #222;
+}
+
+
+/* RESPONSIVE LAYOUT */
+
+@media screen and (max-width: 768px) {
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.8em; }
+    p { font-size: 0.9em; }
+
+
+    .img_container {
+        width: 70%;  
+        padding: 5px;
+    }
+
+    /* Image grid */
+    .column {
+        flex: 1 1 40%; /* 2 columns */
+    }
+
+    /* Navigation menu */
+    .nav-list {
+        flex-direction: column; /* Stack vertically */
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-list li {
+        margin: 10px 0; /* Spacing between items */
+    }
+
+    .nav-list li a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Stack the theme toggle vertically */
+    #theme-toggle {
+        position: static;    /* Remove absolute positioning */
+        margin-top: 15px;     /* Add space above */
+        margin-left: 0;       /* Remove left margin */
+        align-self: center;   /* Center the button */
+    }
+    
+
+    /* Slideshow*/
+    .slideshow-container {
+        width: 100%;
+        min-height: 550px; 
+    }
+
+    .slide-content {
+        height: calc(100% - 200px); 
+    }
+    .slide-header { font-size: .9em; }
+    .slide-description { font-size: 0.6em; }
+
+    .slide-content iframe {
+        width: 100%;
+        min-height: 300px; 
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    /* images */
+    .img_container {
+        width: 80%; 
+        border-width: 2px; 
+    }
+
+    /* image grid*/
+    .column {
+        flex: 1 1 100%; /* 1 column */
+    }
+
+}

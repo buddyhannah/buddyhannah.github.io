@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hannah Himelright</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">  
+  <script src="script.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+</head>
+
+<body>
+  
+  <header>
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Hobbies">Hobbies</a></li>
+                <li><a href="#Clubs">Clubs</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+    
+  </header>
+
+  <main>
+    <section id="Home">
+      <h1>Hannah</h1>
+      <p>
+        Senior college student looking to apply math and 
+        computer science skills towards software development 
+        for the U.S. Army.
+      </p>
+      <div class="img_container">
+        <img src="media/hannah.jpg" alt="Hanneh">
+      </div>
+    </section>
+
+    <section id="Projects">
+      
+      <h1>Projects</h1>
+      
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <div class="slide-title">The Hobbit Mini Games</div>
+          <div class="slide-description">
+            Game based on the <em>The Hobbit</em> movie trilogy.
+          </div>
+          <div class="slide-content">
+            <iframe 
+              src="https://turbowarp.org/468391636/embed" 
+              title="Embedded Scratch Project"
+              width="480px" 
+              height="360px"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <div class="slide-title">Guess that Drawing</div>
+          <div class="slide-description">
+            Multiplayer  
+            <a href="https://github.com/kurt-caves/Guess-That-Drawing">Guess That Drawing game</a> 
+            in Unity where one player draws a picture, and the other players use a chatbox 
+            to guess the drawing. 
+          </div>
+          <div class="slide-content fade-container">
+            <img src="media/gtd_artist.png" alt="Artist Screen for Guess that Drawing" class="fade-img">
+            <img src="media/gtd_guesser.png" alt="Guesser Screen for Guess that Drawing" class="fade-img">
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <div class="slide-title">Wind Event Model</div>
+          <div class="slide-description">
+            Python/Qt GUI application to pull and display hourly forecast data from 
+            multiple providers into SQLite, and generate a wind event forecast by analyzing 
+            data against historical trends.
+          </div>
+          <div class="slide-content">
+            <img src="media/windEvent_ensTable.png" alt="Wind Event Displayed Data">
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <div class="slide-title">Cross Product Calculator</div>
+          <div class="slide-description">
+            <a href="https://github.com/buddyhannah/Cross-Product-Calculator">Cross Product Calculator</a> 
+            developed in Python, using MathJax to display the result as rendered LaTeX, and the SymPy 
+            library to handle more complex inputs like imaginary numbers and square roots.
+          </div>
+          <div class="slide-content">
+            <img src="media/crossProduct.png" alt="Cross Product Calculator">
+          </div>
+         
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+
+    </section>
+
+    <section id="Hobbies">
+      <h1>Hobbies</h1>
+      
+      <section id = "Soccer">
+        <h2>Soccer</h2>
+        <div class="img_container">
+          <img src="media/soccer.jpg" alt="Soccer">
+        </div>
+      </section>
+
+      <section id = "Taekwondo">
+        <h2>Teakwondo</h2>
+        <div class="img_container">
+          <img src="media/tkd.jpg" alt="Taekwondo">
+        </div>
+      </section>
+
+      <section id = "Hiking">
+        <h2>Hiking</h2>
+        <div class="img_container">
+          <img src="media/hiking.jpg" alt="Hiking">
+        </div>
+      </section>
+
+      <section id = "Baking">
+        <h2>Baking</h2>
+        <div class="row">
+          <div class="column">
+            <img src="media/pecanCake.jpg" alt="Pecan cake">
+            <img src="media/cake.jpg" alt="Capybara cake">
+          </div>
+          <div class="column">
+            <img src="media/cookies.jpg" alt="Stained glass cookies">
+            <img src="media/julyCookies.jpg" alt="Fourth of July sugar cookies">
+            
+          </div>  
+          <div class="column">
+            <img src="media/cupcakes.jpg" alt="Fourth of July Cupcakes">
+             <img src="media/geo_pie.jpg" alt="Geometric Pie">
+          </div>
+          <div class="column">
+            <img src="media/cake_pops.jpg" alt="Cake pops">
+            <img src="media/moon_cakes.jpg" alt="Moon Cakes">  
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <section id="Clubs">
+      <h1>Clubs</h1>
+      <section id="RTG">
+      </section>
+        <h2>NMSU Mathematics Department Research Training Group in Logic and Its Applications (RTG)</h2>
+        <p> 
+          Participate in weekly seminars and problem-solving sessions focused on 
+          modal logic and its applications to computer science.
+          
+        </p>
+        <div class="img_container">
+          <img src="media/rtg.png" alt="RTG logo">
+        </div>
+
+      </section>
+      
+      <section id="Spooky Club">
+        <h2>Spooky Club of New Mexico State University</h2>
+        <p> 
+          Social group aimed at building friendship and community on campus 
+          through fun activities such as: scavenger hunts, crafting gingerbread houses, 
+          and playing capture the flag.
+        </p>
+        <div class="img_container">
+          <img src="media/spooky_club.jpg" alt="Spooky club">
+        </div>
+       
+      </section>
+    </section>
+
+
+
+    <section id="Contact">
+      <h1>Contact</h1>
+      
+      <form action="https://formsubmit.co/hannahhimelright@gmail.com" method="POST">
+        <p style="text-align:left">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </p>
+        
+        <p style="text-align:left">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required> 
+        </p>
+        
+        <p style="text-align:left">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </p>
+    
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  
+  
+  <footer>
+    <nav>
+      <div class="nav-container">
+          <ul class="nav-list">
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#Projects">Projects</a></li>
+              <li><a href="#Hobbies">Hobbies</a></li>
+              <li><a href="#Clubs">Clubs</a></li>
+              <li><a href="#Contact">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+ 
+  </footer>
+
+</body>
+</html>
