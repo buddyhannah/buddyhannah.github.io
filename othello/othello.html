@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Othello Game</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Concert+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+
+        <nav>
+            
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="../index.html#Home">Home</a></li>
+                    <li><a href="../index.html#Projects">Projects</a></li>
+                    <li><a href="../index.html#Hobbies">Hobbies</a></li>
+                    <li><a href="../index.html#Clubs">Clubs</a></li>
+                    <li><a href="../index.html#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h1>Othello</h1>
+        <div id="turnDisplay">
+           Turn
+        </div>
+    </div>
+    
+    <div id="gameArea">
+        <div id="gameBackground"></div>
+        <div id="diskLayer"></div>
+        <div id="canMoveLayer"></div>
+    </div>
+    <div id="footer">
+        <div id="score">
+            Score
+        </div>
+        <button onclick="resetGame()">Reset</button>
+    </div>
+</body>
+</html>
